@@ -1,3 +1,4 @@
+import 'package:e_commerce/core/app%20router/app_routes.dart';
 import 'package:e_commerce/data/data%20source/statics.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -15,7 +16,8 @@ class OnboardingControllerImpl extends OnboardingController {
   @override
   next() {
     currentIndex++;
-    if (currentIndex > onboardingList.length) {
+    if (currentIndex > onboardingList.length - 1) {
+      Get.offAllNamed(AppRoutes.login);
     } else {
       pageController.animateToPage(
         currentIndex,
