@@ -1,6 +1,8 @@
+import 'package:e_commerce/core/app%20router/app_routes.dart';
 import 'package:e_commerce/core/app%20theme/font_style.dart';
 import 'package:e_commerce/core/constants/assets.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -21,6 +23,11 @@ class _SplashViewState extends State<SplashView>
     slidingText = Tween<Offset>(begin: const Offset(0, 10), end: Offset.zero)
         .animate(animationController);
     animationController.forward();
+
+    Future.delayed(
+      const Duration(seconds: 2),
+      () => Get.offAllNamed(AppRoutes.chooseLanguage),
+    );
     super.initState();
   }
 
