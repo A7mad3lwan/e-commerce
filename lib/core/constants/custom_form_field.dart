@@ -51,7 +51,7 @@ class CustomFormField extends StatelessWidget {
             borderSide: const BorderSide(color: Colors.white),
           ),
           label: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Text(
               labelText,
               style: FontStyles.font18,
