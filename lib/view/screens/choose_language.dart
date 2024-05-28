@@ -30,7 +30,7 @@ class ChooseLanguage extends StatelessWidget {
                   controller.changeLocal('en');
                   Get.offAllNamed(AppRoutes.onboarding);
                 },
-                buttonText: 'En',
+                buttonText: 'en',
               ),
               const SizedBox(height: 5),
               CustomButton(
@@ -38,7 +38,7 @@ class ChooseLanguage extends StatelessWidget {
                   controller.changeLocal('ar');
                   Get.offAllNamed(AppRoutes.onboarding);
                 },
-                buttonText: 'Ar',
+                buttonText: 'ar',
               ),
             ],
           ),
