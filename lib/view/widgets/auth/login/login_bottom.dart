@@ -3,8 +3,9 @@ import 'package:get/get.dart';
 
 import '../../../../core/app theme/font_style.dart';
 import '../../../../core/constants/custom_button.dart';
+import '../../../../core/controller/auth/login_controller.dart';
 
-class LoginBottom extends StatelessWidget {
+class LoginBottom extends GetView<LoginControllerImpl> {
   const LoginBottom({super.key});
 
   @override
@@ -14,7 +15,9 @@ class LoginBottom extends StatelessWidget {
         Align(
           alignment: Alignment.topRight,
           child: InkWell(
-            onTap: () {},
+            onTap: () {
+              controller.forgetPassword();
+            },
             child: Text(
               '18'.tr,
               style: FontStyles.font16.copyWith(
@@ -27,7 +30,9 @@ class LoginBottom extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20.0),
           child: CustomButton(
-            onPressed: () {},
+            onPressed: () {
+              controller.login();
+            },
             buttonText: '19'.tr,
           ),
         ),
@@ -41,7 +46,9 @@ class LoginBottom extends StatelessWidget {
             ),
             const SizedBox(width: 10),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                controller.toSignup();
+              },
               child: Text(
                 '21'.tr,
                 style: FontStyles.font16.copyWith(

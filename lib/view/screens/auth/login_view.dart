@@ -3,7 +3,9 @@ import 'package:e_commerce/view/screens/auth/login_view_body.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class LoginView extends StatelessWidget {
+import '../../../core/controller/auth/login_controller.dart';
+
+class LoginView extends GetView<LoginControllerImpl> {
   const LoginView({super.key});
 
   @override

@@ -1,9 +1,10 @@
+import 'package:e_commerce/core/controller/auth/login_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../core/app theme/font_style.dart';
 
-class LoginHeader extends StatelessWidget {
+class LoginHeader extends GetView<LoginControllerImpl> {
   const LoginHeader({super.key});
 
   @override
