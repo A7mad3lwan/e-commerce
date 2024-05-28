@@ -1,9 +1,11 @@
+import 'package:e_commerce/core/controller/onboarding_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../core/app theme/font_style.dart';
 import '../../../data/data source/statics.dart';
 
-class OnboardingSlider extends StatelessWidget {
+class OnboardingSlider extends GetView<OnboardingControllerImpl> {
   const OnboardingSlider({super.key});
 
   @override
@@ -11,6 +13,10 @@ class OnboardingSlider extends StatelessWidget {
     return SizedBox(
       height: MediaQuery.of(context).size.width / 0.7,
       child: PageView.builder(
+        controller: controller.pageController,
+        onPageChanged: (index) {
+          controller.onPageChanged(index);
+        },
         physics: const BouncingScrollPhysics(),
         itemCount: onboardingList.length,
         itemBuilder: (context, index) => Column(
