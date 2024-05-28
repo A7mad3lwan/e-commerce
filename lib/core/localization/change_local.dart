@@ -14,8 +14,8 @@ class LocalController extends GetxController {
     Locale locale = Locale(langCode);
     await appServices.sharedPreferences.setString('lang', langCode);
     appTheme = langCode == 'ar' ? darkArabicTheme : darkEnglishTheme;
-    Get.updateLocale(locale);
     Get.changeTheme(appTheme);
+    Get.updateLocale(locale);
   }
 
   @override
