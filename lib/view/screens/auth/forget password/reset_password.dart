@@ -38,27 +38,39 @@ class ResetPassword extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 70),
-              CustomFormField(
-                validator: (val) {
-                  return appValidator(val!, 'email', 10, 100);
-                },
-                suffix: FontAwesomeIcons.envelope,
-                controller: controller.email,
-                labelText: '35'.tr,
-                hintText: '36'.tr,
+              GetBuilder<ResetPasswordControllerImpl>(
+                builder: (controller) => CustomFormField(
+                  validator: (val) {
+                    return appValidator(val!, 'password', 8, 100);
+                  },
+                  onIconTap: () {
+                    controller.showPassword();
+                  },
+                  obscureText: controller.obscure,
+                  suffix: controller.suffix,
+                  controller: controller.password,
+                  labelText: '35'.tr,
+                  hintText: '36'.tr,
+                ),
               ),
-              CustomFormField(
-                validator: (val) {
-                  return appValidator(val!, 'email', 10, 100);
-                },
-                suffix: FontAwesomeIcons.envelope,
-                controller: controller.emailConfirm,
-                labelText: '37'.tr,
-                hintText: '38'.tr,
+              GetBuilder<ResetPasswordControllerImpl>(
+                builder: (controller) => CustomFormField(
+                  validator: (val) {
+                    return appValidator(val!, 'password', 8, 100);
+                  },
+                  onIconTap: () {
+                    controller.showPassword();
+                  },
+                  obscureText: controller.obscure,
+                  suffix: controller.suffix,
+                  controller: controller.passwordConfirm,
+                  labelText: '37'.tr,
+                  hintText: '38'.tr,
+                ),
               ),
               const SizedBox(height: 20),
               CustomButton(
-                onPressed: (){
+                onPressed: () {
                   controller.resetPassword();
                 },
                 buttonText: '39'.tr,
