@@ -42,7 +42,9 @@ class VerifyCode extends StatelessWidget {
               borderColor: Colors.deepPurple,
               showFieldAsBox: true,
               onCodeChanged: (String code) {},
-              onSubmit: (String verificationCode) {}, // end onSubmit
+              onSubmit: (String verificationCode) {
+                controller.resetPassword();
+              }, // end onSubmit
             ),
             const SizedBox(height: 40),
           ],
