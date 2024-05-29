@@ -1,5 +1,6 @@
 import 'package:e_commerce/core/app%20router/app_routes.dart';
 import 'package:e_commerce/view/screens/auth/forget%20password/forget_password.dart';
+import 'package:e_commerce/view/screens/auth/forget%20password/reset_password.dart';
 import 'package:e_commerce/view/screens/auth/forget%20password/verify_code.dart';
 import 'package:e_commerce/view/screens/auth/login_view.dart';
 import 'package:e_commerce/view/screens/auth/signup_view.dart';
@@ -16,4 +17,5 @@ List<GetPage<dynamic>>? pages = [
   GetPage(name: AppRoutes.signup, page: () => const SignupView()),
   GetPage(name: AppRoutes.forgetPassword, page: () => const ForgetPassword()),
   GetPage(name: AppRoutes.verifyCode, page: () => const VerifyCode()),
+  GetPage(name: AppRoutes.resetPassword, page: () => const ResetPassword()),
 ];
