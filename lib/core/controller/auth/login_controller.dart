@@ -59,7 +59,9 @@ class LoginControllerImpl extends LoginController {
   }
 
   @override
-  forgetPassword() {}
+  forgetPassword() {
+    Get.offAllNamed(AppRoutes.forgetPassword);
+  }
 
   @override
   void dispose() {
