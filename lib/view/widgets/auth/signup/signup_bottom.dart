@@ -1,10 +1,11 @@
+import 'package:e_commerce/core/controller/auth/signup_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../core/app theme/font_style.dart';
 import '../../../../core/constants/custom_button.dart';
 
-class SignupBottom extends StatelessWidget {
+class SignupBottom extends GetView<SignupControllerImpl> {
   const SignupBottom({super.key});
 
   @override
@@ -14,7 +15,9 @@ class SignupBottom extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20.0),
           child: CustomButton(
-            onPressed: () {},
+            onPressed: () {
+              controller.signup();
+            },
             buttonText: '21'.tr,
           ),
         ),
@@ -28,7 +31,9 @@ class SignupBottom extends StatelessWidget {
             ),
             const SizedBox(width: 10),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                controller.toLogin();
+              },
               child: Text(
                 '11'.tr,
                 style: FontStyles.font16.copyWith(

@@ -1,9 +1,10 @@
+import 'package:e_commerce/core/controller/auth/signup_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../core/app theme/font_style.dart';
 
-class SignupHeader extends StatelessWidget {
+class SignupHeader extends GetView<SignupControllerImpl> {
   const SignupHeader({super.key});
 
   @override
