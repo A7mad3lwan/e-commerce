@@ -58,7 +58,9 @@ class ResetPassword extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               CustomButton(
-                onPressed: (){},
+                onPressed: (){
+                  controller.resetPassword();
+                },
                 buttonText: '39'.tr,
               ),
             ],

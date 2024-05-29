@@ -26,7 +26,12 @@ class ResetPasswordControllerImpl extends ResetPasswordController {
   }
 
   @override
-  resetPassword() {}
+  resetPassword() {
+    var formData = formKey.currentState;
+    if (formData!.validate()) {
+      Get.offAllNamed(AppRoutes.successResetPassword);
+    }
+  }
 
   @override
   void dispose() {
