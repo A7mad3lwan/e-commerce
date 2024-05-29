@@ -48,6 +48,7 @@ class SignupControllerImpl extends SignupController {
       if (kDebugMode) {
         print('valid data!');
       }
+      Get.offAllNamed(AppRoutes.signupVerify);
     } else {
       if (kDebugMode) {
         print('valid data!');
