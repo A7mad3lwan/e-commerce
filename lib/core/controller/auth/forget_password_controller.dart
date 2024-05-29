@@ -27,7 +27,9 @@ class ForgetPasswordControllerImpl extends ForgetPasswordController {
   @override
   check() {
     var formData = formKey.currentState;
-    if (formData!.validate()) {}
+    if (formData!.validate()) {
+      Get.offAllNamed(AppRoutes.verifyCode);
+    }
   }
 
   @override
