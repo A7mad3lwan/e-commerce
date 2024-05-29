@@ -14,5 +14,7 @@ class VerifyCodeControllerImpl extends VerifyCodeController {
   }
 
   @override
-  resetPassword() {}
+  resetPassword() {
+    Get.offAllNamed(AppRoutes.resetPassword);
+  }
 }
