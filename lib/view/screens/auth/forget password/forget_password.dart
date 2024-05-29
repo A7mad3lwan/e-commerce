@@ -12,7 +12,8 @@ class ForgetPassword extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ForgetPasswordControllerImpl controller = Get.put(ForgetPasswordControllerImpl());
+    ForgetPasswordControllerImpl controller =
+        Get.put(ForgetPasswordControllerImpl());
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -53,7 +54,7 @@ class ForgetPassword extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               CustomButton(
-                onPressed: (){
+                onPressed: () {
                   controller.check();
                 },
                 buttonText: '30'.tr,
