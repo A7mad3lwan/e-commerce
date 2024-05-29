@@ -1,5 +1,6 @@
 import 'package:e_commerce/core/constants/custom_form_field.dart';
 import 'package:e_commerce/core/controller/auth/login_controller.dart';
+import 'package:e_commerce/core/functions/validator.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
@@ -23,6 +24,9 @@ class LoginViewBody extends StatelessWidget {
             children: [
               const LoginHeader(),
               CustomFormField(
+                validator: (val) {
+                  return appValidator(val!, 'email', 10, 100);
+                },
                 controller: controller.email,
                 labelText: '14'.tr,
                 hintText: '15'.tr,
@@ -32,6 +36,9 @@ class LoginViewBody extends StatelessWidget {
                 builder: (controller) => CustomFormField(
                   onIconTap: () {
                     controller.showPassword();
+                  },
+                  validator: (val) {
+                    return appValidator(val!, 'password', 8, 100);
                   },
                   controller: controller.password,
                   obscureText: controller.obscureText,
