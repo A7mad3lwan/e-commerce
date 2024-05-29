@@ -1,3 +1,4 @@
+import 'package:e_commerce/core/app%20router/app_routes.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -53,7 +54,9 @@ class LoginControllerImpl extends LoginController {
   }
 
   @override
-  toSignup() {}
+  toSignup() {
+    Get.offAllNamed(AppRoutes.signup);
+  }
 
   @override
   forgetPassword() {}
