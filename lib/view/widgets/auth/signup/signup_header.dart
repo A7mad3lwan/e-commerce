@@ -21,7 +21,7 @@ class SignupHeader extends GetView<SignupControllerImpl> {
           textAlign: TextAlign.center,
           style: FontStyles.font16,
         ),
-        const SizedBox(height: 70),
+        const SizedBox(height: 45),
       ],
     );
   }

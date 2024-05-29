@@ -33,7 +33,7 @@ class VerifyCode extends StatelessWidget {
             ),
             const SizedBox(height: 50),
             OtpTextField(
-              margin: const EdgeInsets.only(right: 20),
+              margin: const EdgeInsets.only(right: 10),
               contentPadding: const EdgeInsets.symmetric(vertical: 25),
               textStyle: FontStyles.font18,
               fieldWidth: 50.0,

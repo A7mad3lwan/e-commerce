@@ -17,7 +17,7 @@ class SignupViewBody extends StatelessWidget {
     return Form(
       key: controller.formKey,
       child: ListView(
-        padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 20),
+        padding: const EdgeInsets.symmetric(vertical: 35, horizontal: 20),
         physics: const BouncingScrollPhysics(),
         children: [
           const SignupHeader(),

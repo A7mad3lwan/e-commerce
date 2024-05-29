@@ -25,10 +25,10 @@ class SuccessResetPassword extends StatelessWidget {
               const Spacer(),
               const Icon(
                 FontAwesomeIcons.circleCheck,
-                size: 200,
+                size: 150,
                 color: Colors.deepPurple,
               ),
-              const Spacer(),
+              const Spacer(flex: 1),
               Text(
                 '41'.tr,
                 style: FontStyles.font20,

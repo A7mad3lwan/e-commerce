@@ -11,7 +11,7 @@ class OnboardingSlider extends GetView<OnboardingControllerImpl> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.width / 0.7,
+      height: MediaQuery.of(context).size.width / 0.8,
       child: PageView.builder(
         controller: controller.pageController,
         onPageChanged: (index) {

@@ -26,7 +26,7 @@ class SignupSuccess extends StatelessWidget {
               const Spacer(),
               const Icon(
                 FontAwesomeIcons.circleCheck,
-                size: 200,
+                size: 150,
                 color: Colors.deepPurple,
               ),
               const Spacer(),
