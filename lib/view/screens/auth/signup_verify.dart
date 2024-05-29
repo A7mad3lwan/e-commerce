@@ -44,7 +44,9 @@ class SignupVerify extends StatelessWidget {
               borderColor: Colors.deepPurple,
               showFieldAsBox: true,
               onCodeChanged: (String code) {},
-              onSubmit: (String verificationCode) {}, // end onSubmit
+              onSubmit: (String verificationCode) {
+                controller.verify();
+              }, // end onSubmit
             ),
             const SizedBox(height: 40),
           ],

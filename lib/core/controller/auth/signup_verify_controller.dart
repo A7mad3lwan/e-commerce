@@ -15,5 +15,7 @@ class SignupVerifyControllerImpl extends SignupVerifyController {
   }
 
   @override
-  verify() {}
+  verify() {
+    Get.offAllNamed(AppRoutes.signupSuccess);
+  }
 }

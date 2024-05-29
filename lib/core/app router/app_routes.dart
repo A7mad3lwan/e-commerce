@@ -9,4 +9,5 @@ abstract class AppRoutes {
   static const resetPassword = '/resetPassword';
   static const successResetPassword = '/successResetPassword';
   static const signupVerify = '/signupVerify';
+  static const signupSuccess = '/signupSuccess';
 }
