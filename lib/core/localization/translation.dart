@@ -33,7 +33,7 @@ class AppTranslation extends Translations {
           '24': 'enter your user name',
           '25': 'Phone Number',
           '26': 'enter your phone number',
-          '27': 'have an account ?',
+          '27': 'already have an account ?',
           '28': 'Check Email',
           '29': 'Enter Your Valid Email To Check and Receive Verify Code',
           '30': 'check',
