@@ -24,7 +24,7 @@ class AppTranslation extends Translations {
           '15': 'Enter Your Email',
           '16': 'Password',
           '17': 'Enter Your Password',
-          '18': 'Forget Password ?',
+          '18': 'Forget Password',
           '19': 'Sign In',
           '20': 'Don\'t Have An Account ?',
           '21': 'Sign Up',

@@ -7,12 +7,12 @@ ThemeData darkEnglishTheme = ThemeData(
   scaffoldBackgroundColor: const Color(0xff100B20),
   fontFamily: 'PlayfairDisplay',
   appBarTheme: const AppBarTheme(
-    centerTitle: true,
-    toolbarHeight: 55,
-    elevation: 0,
-    backgroundColor: Color(0xff100B20),
-    toolbarTextStyle: FontStyles.font20,
-  ),
+      centerTitle: true,
+      toolbarHeight: 55,
+      elevation: 0,
+      backgroundColor: Color(0xff100B20),
+      toolbarTextStyle: FontStyles.font20,
+      titleTextStyle: FontStyles.font20),
 );
 
 ThemeData lightEnglishTheme = ThemeData(
@@ -20,12 +20,12 @@ ThemeData lightEnglishTheme = ThemeData(
   scaffoldBackgroundColor: Colors.white,
   fontFamily: 'PlayfairDisplay',
   appBarTheme: const AppBarTheme(
-    centerTitle: true,
-    toolbarHeight: 55,
-    elevation: 0,
-    backgroundColor: Colors.white,
-    toolbarTextStyle: FontStyles.font20,
-  ),
+      centerTitle: true,
+      toolbarHeight: 55,
+      elevation: 0,
+      backgroundColor: Colors.white,
+      toolbarTextStyle: FontStyles.font20,
+      titleTextStyle: FontStyles.font20),
 );
 
 ThemeData darkArabicTheme = ThemeData(
@@ -33,12 +33,12 @@ ThemeData darkArabicTheme = ThemeData(
   scaffoldBackgroundColor: const Color(0xff100B20),
   fontFamily: 'Cairo',
   appBarTheme: const AppBarTheme(
-    centerTitle: true,
-    toolbarHeight: 55,
-    elevation: 0,
-    backgroundColor: Color(0xff100B20),
-    toolbarTextStyle: FontStyles.font20,
-  ),
+      centerTitle: true,
+      toolbarHeight: 55,
+      elevation: 0,
+      backgroundColor: Color(0xff100B20),
+      toolbarTextStyle: FontStyles.font20,
+      titleTextStyle: FontStyles.font20),
 );
 
 ThemeData lightArabicTheme = ThemeData(
@@ -46,10 +46,10 @@ ThemeData lightArabicTheme = ThemeData(
   scaffoldBackgroundColor: Colors.white,
   fontFamily: 'Cairo',
   appBarTheme: const AppBarTheme(
-    centerTitle: true,
-    toolbarHeight: 55,
-    elevation: 0,
-    backgroundColor: Colors.white,
-    toolbarTextStyle: FontStyles.font20,
-  ),
+      centerTitle: true,
+      toolbarHeight: 55,
+      elevation: 0,
+      backgroundColor: Colors.white,
+      toolbarTextStyle: FontStyles.font20,
+      titleTextStyle: FontStyles.font20),
 );
